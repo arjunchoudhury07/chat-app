@@ -45,11 +45,11 @@ const Home: NextPage = () => {
         </div>
         {/* <div className="mx-0 h-0 w-0  lg:mx-24 lg:h-96 lg:w-[700px]"></div> */}
         <Image
-          className="invisible ml-44 md:visible"
+          className="ml-0 h-0 w-0 xl:ml-44 xl:h-[500px] xl:w-[700px] 2xl:h-[700px] 2xl:w-[900px]"
           src="/ui.png"
           alt="ui"
-          height={800}
-          width={800}
+          height={1920}
+          width={1080}
         />
         <div className="absolute top-[30%] h-96 w-full -skew-y-12 bg-gray-800/10"></div>
       </main>
