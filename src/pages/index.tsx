@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 const Home: NextPage = () => {
@@ -42,7 +43,14 @@ const Home: NextPage = () => {
             <img src="data:image/png;base64,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" />
           </div>
         </div>
-        <div className="mx-0 h-0 w-0  lg:mx-24 lg:h-96 lg:w-[700px]"></div>
+        {/* <div className="mx-0 h-0 w-0  lg:mx-24 lg:h-96 lg:w-[700px]"></div> */}
+        <Image
+          className="invisible ml-44 md:visible"
+          src="/ui.png"
+          alt="ui"
+          height={800}
+          width={800}
+        />
         <div className="absolute top-[30%] h-96 w-full -skew-y-12 bg-gray-800/10"></div>
       </main>
     </>
